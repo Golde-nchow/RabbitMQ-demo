@@ -23,6 +23,7 @@ public class Consumer {
      * 但是无法一边发，一边接收，不是说好持续订阅的吗, 不明白.
      */
     public static void push() throws URISyntaxException, KeyManagementException, TimeoutException, NoSuchAlgorithmException, IOException {
+        // 如果设置了手动提交，那么只有当执行了ack之后，RabbitMQ 才会移除该消息.
         final boolean autoAck = false;
         Connection connection = RabbitConnectionFactory.getConnection(false);
         final Channel channel = connection.createChannel();
