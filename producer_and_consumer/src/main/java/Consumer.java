@@ -21,6 +21,8 @@ public class Consumer {
     /**
      * 使用方式，因为推模式是采用持续订阅的方式，所以让生产者生产多个消息，然后再运行推模式，就能够消费多个消息
      * 但是无法一边发，一边接收，不是说好持续订阅的吗, 不明白.
+     *
+     * 解答：这里的一边发，一边接收，是可以的，要在同一个 Connection, Channel 下才行.
      */
     public static void push() throws URISyntaxException, KeyManagementException, TimeoutException, NoSuchAlgorithmException, IOException {
         // 如果设置了手动提交，那么只有当执行了ack之后，RabbitMQ 才会移除该消息.
