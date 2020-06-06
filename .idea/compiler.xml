@@ -18,7 +18,7 @@
     <bytecodeTargetLevel>
       <module name="Alternate-Exchange" target="1.5" />
       <module name="Dead-Letter-Exchanger" target="1.5" />
-      <module name="Delay-Queue" target="1.5" />
+      <module name="Delay-Queue" target="1.8" />
       <module name="Mandatory-Demo" target="1.8" />
       <module name="producer-and-consumer" target="1.5" />
       <module name="producer_and_consumer" target="1.5" />
