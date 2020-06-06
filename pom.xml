@@ -14,6 +14,7 @@
         <module>TTL-Queue</module>
         <module>Dead-Letter-Exchanger</module>
         <module>Delay-Queue</module>
+        <module>Priority-Queue</module>
     </modules>
 
     <dependencies>
