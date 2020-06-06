@@ -6,14 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Alternate-Exchange" />
+        <module name="Dead-Letter-Exchanger" />
+        <module name="Delay-Queue" />
+        <module name="Mandatory-Demo" />
         <module name="producer-and-consumer" />
         <module name="producer_and_consumer" />
+        <module name="TTL-Queue" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Alternate-Exchange" target="1.5" />
+      <module name="Dead-Letter-Exchanger" target="1.5" />
+      <module name="Delay-Queue" target="1.5" />
+      <module name="Mandatory-Demo" target="1.8" />
       <module name="producer-and-consumer" target="1.5" />
       <module name="producer_and_consumer" target="1.5" />
       <module name="rabbitmq-demo" target="1.5" />
+      <module name="TTL-Queue" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

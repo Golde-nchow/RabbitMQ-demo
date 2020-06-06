@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://G:\IDEA_Practise\rabbitmq-demo\producer-and-consumer\producer-and-consumer.iml" filepath="G:\IDEA_Practise\rabbitmq-demo\producer-and-consumer\producer-and-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Alternate-Exchange/Alternate-Exchange.iml" filepath="$PROJECT_DIR$/Alternate-Exchange/Alternate-Exchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dead-Letter-Exchanger/Dead-Letter-Exchanger.iml" filepath="$PROJECT_DIR$/Dead-Letter-Exchanger/Dead-Letter-Exchanger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Delay-Queue/Delay-Queue.iml" filepath="$PROJECT_DIR$/Delay-Queue/Delay-Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mandatory-Demo/Mandatory-Demo.iml" filepath="$PROJECT_DIR$/Mandatory-Demo/Mandatory-Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TTL-Queue/TTL-Queue.iml" filepath="$PROJECT_DIR$/TTL-Queue/TTL-Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/producer_and_consumer/producer_and_consumer.iml" filepath="$PROJECT_DIR$/producer_and_consumer/producer_and_consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-demo.iml" filepath="$PROJECT_DIR$/rabbitmq-demo.iml" />
     </modules>
   </component>

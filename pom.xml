@@ -9,6 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>producer_and_consumer</module>
+        <module>Alternate-Exchange</module>
+        <module>Mandatory-Demo</module>
+        <module>TTL-Queue</module>
+        <module>Dead-Letter-Exchanger</module>
+        <module>Delay-Queue</module>
     </modules>
 
     <dependencies>
