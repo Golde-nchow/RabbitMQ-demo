@@ -16,6 +16,12 @@ import java.util.concurrent.TimeoutException;
  */
 public class Producer {
 
+    /**
+     * 什么是持久化 durable ?
+     * 就是在 RabbitMQ 出现重启、关闭或宕机的时候，防止数据丢失.
+     * 可持久化的组件: 交换器、队列、消息.
+     * 但是不保证100%能够存入磁盘，这种情况要依赖镜像队列机制.
+     */
     public static void main(String[] args) throws IOException, TimeoutException, NoSuchAlgorithmException, KeyManagementException, URISyntaxException {
 
         Connection connection = RabbitConnectionFactory.getConnection(false);
@@ -39,10 +45,11 @@ public class Producer {
         // 通过 exchangeName 和 routingKey 定位到队列.
         channel.queueBind("myQueue", "myExchanger", "myRoutingKey");
 
-        // 使用 Channel 进行发送消息
+        // 在该 Channel 进行发送消息
         // 可以设置消息的优先级、投递模式、内容类型
         // 可以发送带有 Header 的信息
         // 可以发送带有过期时间的消息
+        // PERSISTENT_TEXT_PLAIN: 包含对消息的持久化的功能
         byte[] messages = "Hello World".getBytes();
         channel.basicPublish("myExchanger", "myRoutingKey", MessageProperties.PERSISTENT_TEXT_PLAIN, messages);
 
