@@ -15,6 +15,8 @@
         <module>Dead-Letter-Exchanger</module>
         <module>Delay-Queue</module>
         <module>Priority-Queue</module>
+        <module>RPC-Demo</module>
+        <module>message-reliability</module>
     </modules>
 
     <dependencies>

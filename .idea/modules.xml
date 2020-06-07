@@ -7,7 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/Delay-Queue/Delay-Queue.iml" filepath="$PROJECT_DIR$/Delay-Queue/Delay-Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mandatory-Demo/Mandatory-Demo.iml" filepath="$PROJECT_DIR$/Mandatory-Demo/Mandatory-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Priority-Queue/Priority-Queue.iml" filepath="$PROJECT_DIR$/Priority-Queue/Priority-Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RPC-Demo/RPC-Demo.iml" filepath="$PROJECT_DIR$/RPC-Demo/RPC-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/TTL-Queue/TTL-Queue.iml" filepath="$PROJECT_DIR$/TTL-Queue/TTL-Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/message-reliability/message-reliability.iml" filepath="$PROJECT_DIR$/message-reliability/message-reliability.iml" />
       <module fileurl="file://$PROJECT_DIR$/producer_and_consumer/producer_and_consumer.iml" filepath="$PROJECT_DIR$/producer_and_consumer/producer_and_consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-demo.iml" filepath="$PROJECT_DIR$/rabbitmq-demo.iml" />
     </modules>
