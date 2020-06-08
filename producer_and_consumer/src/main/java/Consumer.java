@@ -30,6 +30,20 @@ public class Consumer {
         Connection connection = RabbitConnectionFactory.getConnection(false);
         final Channel channel = connection.createChannel();
 
+        // 消息分发概念
+        // 概念: 一个队列被多个消费者消费, 如何更好地进行分发消息
+        // 轮询？使用取余的方式，分发到各个消费者. 缺点: 每个消费者消费的速度不同.
+
+        // prefetchSize: 发送者所能发送消息总体的大小上限, 单位:byte
+        // prefetchCount: 消费者所能接收的【未确认】消息数量. 配合 global 属性.
+        //                true 表示channel的消息最大【未确认】消息的数量是n.
+        //                false 表示每个消费者只能接收n个【未确认】消息.
+        //
+        // 一旦某个消费者取得未确认消息的数量达到上限，则不再往该消费者发送消息, 直到ack确认
+        // 如果有设置 true, 也有false, 则同样作用于 channel
+        channel.basicQos(10, 3, false);
+        channel.basicQos(5, true);
+
         channel.queueDeclare("myQueue", false, false, false, null);
 
         // 通过持续订阅的方式，来进行消费消息
